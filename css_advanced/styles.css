@@ -164,6 +164,7 @@ nav ul li a{
      text-align: center;
      margin-top: 0.5rem;
      opacity: 0.5;
+     text-align: center;
  }
 
  .pro{
@@ -187,7 +188,7 @@ h1{
 
 .quote{
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     background-color: #C271FF;
     align-items: center;
@@ -276,6 +277,7 @@ h1{
     color:  #07162980;
     margin-top: 1rem;
 }
+
 .author{
     display: flex;
     align-items: center;
@@ -286,6 +288,7 @@ h1{
 }
 .author h4{
     margin-left: 1rem;
+    color: #C271FF;
 }
 .author img{
     width: 40px;
@@ -296,6 +299,7 @@ h1{
     display: flex;
     width: 100%;
     margin-top: 1rem;
+   
 }
 
 /*end video section styling*/
@@ -356,7 +360,106 @@ h1{
     font-weight: 200;
     line-height: 26px;
     opacity: 0.8;
+    text-align: center;
     
 }
 /*end membership section styling*/
 /*start F.A.Q sectin styling*/
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw;
+    font-family: mainFont;
+    width: 100vw;
+    height: 100vh;
+}
+.faq h2{
+    flex: 1;
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+.faq-bloc{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 80vw;
+    
+}
+.row-bloc{
+    display: flex;
+    justify-content: space-between;
+}
+.row-item{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.row-item h3{
+    color: #071629;
+}
+.row-item p{
+    font-family: Source Sans Pro;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+color: #07162980;
+}
+/*end F.A.Q section styling*/
+/*start footer styling*/
+footer{
+    width: 100vw;
+    height: 25vh;
+    background-color: #071629;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1%;
+    font-family: mainFont;
+}
+.footer-block{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5vh 10vw;
+}
+footer p span{
+    color: #C271FF;
+}
+.social-media{
+    width: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+i{
+    width:2vw;
+    height: 2vh;
+}
+
+.video-block {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  .image2 {
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    
+  }
+  
+
+
