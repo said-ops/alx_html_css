@@ -1,0 +1,560 @@
+/*Css Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+                                            /*Box Model*/
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+                                            /*Setting Variables*/
+img{
+    display: block;
+    width: 100%;
+}                                            
+
+                                            /*Fonts*/
+@font-face {
+    font-family:mainFontRegular;
+    src: url(./fonts/SourceSansPro-Regular.otf);
+}
+@font-face {
+    font-family:mainFontBold;
+    src: url(./fonts/SourceSansPro-Bold.otf);
+}
+@font-face {
+    font-family:mainFontSemibold;
+    src: url(./fonts/SourceSansPro-Semibold.otf);
+}
+@font-face {
+    font-family: mainFontLight;
+    src: url(./fonts/SourceSansPro-Light.otf);
+}
+@font-face {
+    font-family:logoFont;
+    src: url(./fonts/spincycle_ot.otf);
+}
+/*Holberton Icons*/
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .holberton_school-icon-arrow_1:before {
+    content: "\e900";
+  }
+  .holberton_school-icon-arrow_2:before {
+    content: "\e901";
+  }
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+  }
+  .holberton_school-icon-arrow_5:before {
+    content: "\e904";
+  }
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  .holberton_school-icon-ic_bag:before {
+    content: "\e906";
+  }
+  .holberton_school-icon-ic_cart:before {
+    content: "\e907";
+  }
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  .holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+  }
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  .holberton_school-icon-ic_laptop:before {
+    content: "\e90b";
+  }
+  .holberton_school-icon-ic_money:before {
+    content: "\e90c";
+  }
+  .holberton_school-icon-ic_music:before {
+    content: "\e90d";
+  }
+  .holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+  }
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  .holberton_school-icon-ic_video:before {
+    content: "\e910";
+  }
+  .holberton_school-icon-menu:before {
+    content: "\e911";
+  }
+  .holberton_school-icon-search_1:before {
+    content: "\e912";
+  }
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+  }
+  .holberton_school-icon-star:before {
+    content: "\e914";
+  }
+  
+/*Colors*/
+:root{
+    --main-color:#FF6565;
+}
+                                                            /*start hero styling*/
+.hero-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(./images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    padding: 5vh 5vw;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.holberton_school-icon-menu{
+    display: none;
+}
+nav img{
+    width: 11rem;
+    height: 2rem;
+}
+nav ul{
+    display: flex;
+    width: 20rem;
+    justify-content: space-evenly;
+}
+.hero-part-1-text h1 span{
+    color:#01d0f5;
+    opacity: 0.8;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: mainFontBold;
+}
+a:hover,a:active{
+    color: #FF6565;
+    opacity: 0.9;
+    transition: ease-in-out 0.3s;
+}
+.hero-text{
+    max-width: 45rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: center;
+    text-align: center; 
+}
+h1{
+    font-family: mainFontBold;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 6rem;
+}
+.hero-part-1-text p{
+    font-family: mainFontBold;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+.btn{
+    width: 9rem;
+    height: 2.5rem;
+    background-color: var(--main-color);
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'mainFontBold';
+    border: 0;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: ease-in-out 0.3s;
+}
+.btn:hover,.btn:active{
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 1px 5px 20px #FF6565;
+    
+}
+.hero-part-2{
+    font-family: 'mainFontRegular';
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin-top: 5rem;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+/*hero media queries*/
+
+@media  screen and (max-width:480px) {
+    
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav label{
+        width: 25%;
+    }
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        font-family: 'mainFontLight';
+        font-size: 0.8rem; 
+        display: none;
+    }
+    #toggle:checked ~ .menu  {
+        display: block;
+        text-align: center;
+      }
+    .icon-menu{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    }
+    .holberton_school-icon-menu{
+        color: whitesmoke;
+        display: unset;
+    }
+    .menu li {
+        margin: 15px auto;
+        font-size: 12px;
+    }
+    
+}
+                                                /*End hero styling*/
+                                                /*Start what we do section styling*/
+.wwd{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}                                                
+.wwd-container{
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    max-width: 50rem;
+}      
+.wwd-container h2{
+  font-family: mainFontSemiBold;
+  font-size: 1.5rem;
+} 
+.wwd-container .desc{
+    max-width: 70%;
+    align-self: center;
+    font-family: 'mainFontRegular';
+    color: #071629;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.wwd-items{
+  display: flex;
+  margin-top: 5rem;
+  gap: 1rem;
+  justify-content: center;
+}  
+.wwd-items .wwd-item span{
+  font-size: 7rem;
+  color: var(--main-color);
+}  
+.wwd-item h3{
+    font-family: 'mainFontSemibold';
+    margin-top: 1rem;
+    font-size: 1rem;
+}  
+.wwd-item p {
+  margin-top: 1rem;
+  font-family: 'mainFontRegular';
+  line-height: 1.5;
+}                                 
+/*what we do section media queries*/
+@media screen and (max-width:768px) {
+  .wwd-item{
+    padding: 1rem;
+    width: 36%;
+  }
+  .wwd-items{
+    flex-wrap: wrap;
+  }
+  
+  
+}
+@media  screen and (max-width:480px) {
+  .wwd-items{
+    flex-direction: column;
+    align-content: center;
+  }
+  
+}
+/*Results section styling*/
+.results{
+  background: url(./images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.results-container{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.results-container h2{
+  font-family: 'mainFontRegular';
+  font-size: 2rem;
+  margin-top: 5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+.results-container #results{
+  font-family: 'mainFontRegular';
+    color: white;
+    max-width: 70%;
+    line-height: 2;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 15px;
+}
+.pentagons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.pentagon{
+  background: url(./images/pentagone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11.5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.pentagon span{
+    font-size: 2rem;
+    font-family: 'mainFontSemibold';
+    color: whitesmoke;
+}
+.pentagon p{
+  font-family: mainFontRegular;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1rem;
+    margin-top: 1rem;
+}
+@media  screen and (max-width:480px) {
+  .pentagons{
+    flex-direction: column;
+  }
+  .wwd-container .desc{
+    max-width: 90%;
+  }
+  
+  
+}
+@media screen and (max-width:768px) {
+    .results-container #results{
+        max-width: unset;
+    }
+    
+}
+/*contact section styling*/
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 5vw;
+    
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 36%;
+    height: 80vh;
+    gap: 1rem;
+    
+    
+}
+.contact-container h2{
+    text-align: center;
+    font-family: 'mainFontSemibold';
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width:80%;
+    
+}
+form input{
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-top: 6px;
+}
+form label{
+    font-family: 'mainFontSemibold';
+    margin-top: 1rem;
+    
+}
+form textarea{
+    resize: none;
+    border: 0;
+    border-bottom: 1px solid grey;
+    margin-top: 6px;
+}
+/*contact section media queries*/
+@media screen and (max-width:768px) {
+    .contact-container{
+        width: 70%;
+        height: 100vh;
+    }
+    .contact-container .btn{
+        width: 12rem;
+    height: 3.5rem;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .contact-container{
+        width: 100%;
+        height:100vh;
+    }
+    .contact-container .btn{
+        width: 12rem;
+    height: 3.5rem;
+    }
+}
+/*footer styling*/
+footer{
+    background-color:#071629;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: space-evenly;
+}
+footer img{
+    width: 11rem;
+    height: 2rem;
+}
+footer .footer-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10vh 5vw;
+}
+footer p{
+    text-align: center;
+    font-family: mainFontRegular;
+    color: whitesmoke;
+
+}
+footer p span{
+    color: #FF6565;
+    text-transform: uppercase;
+}
+.footer-icons .icons span{
+    font-size: 2rem;
+    color: whitesmoke;
+}
+@media screen and (max-width:480px) {
+    .footer-icons{
+     flex-direction: column;   
+    align-items: center;
+    gap: 1rem;
+    }
+    
+}
