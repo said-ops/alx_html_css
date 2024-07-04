@@ -265,9 +265,7 @@ h1{
 /*hero media queries*/
 
 @media  screen and (max-width:480px) {
-    .hero-container{
-        height: unset;
-    }
+    
     nav{
         flex-direction: column;
         gap: 1rem;
@@ -367,5 +365,80 @@ h1{
   }
   
 }
-
+/*Results section styling*/
+.results{
+  background: url(./images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.results-container{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.results-container h2{
+  font-family: 'mainFontRegular';
+  font-size: 2rem;
+  margin-top: 5rem;
+  color: whitesmoke;
+  text-align: center;
+}
+.results-container #results{
+  font-family: 'mainFontRegular';
+    color: white;
+    max-width: 50%;
+    line-height: 2;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 15px;
+}
+.pentagons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.pentagon{
+  background: url(./images/pentagone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11.5rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.pentagon span{
+    font-size: 2rem;
+    font-family: 'mainFontSemibold';
+    color: whitesmoke;
+}
+.pentagon p{
+  font-family: mainFontRegular;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1rem;
+    margin-top: 1rem;
+}
+@media  screen and (max-width:480px) {
+  .pentagons{
+    flex-direction: column;
+  }
+  
+  
+}
+/*results section media queries*/
 
