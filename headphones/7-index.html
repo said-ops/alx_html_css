@@ -4,7 +4,7 @@
         <title>implement a desing from scratch</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" >
         <meta charset="utf-8">
-        <link rel="stylesheet" href="6-styles.css">
+        <link rel="stylesheet" href="7-styles.css">
     </head>
     <body>
         <div class="hero-container">
@@ -17,13 +17,16 @@
                          <span class="holberton_school-icon-menu">
                          </span>
                     </label>   
-                    <img src="./images/logo_headphones.png" alt="Logo">
+                    <div class="logo-wrapper">
+                        <img src="./images/favicon.png" alt="">
+                        <span class="logo-fot"><span class="glow">h</span>eadphones</span>
+                    </div>
                    </div>
                    
                     <ul class="menu">
                         <li><span><a href="#whatwedo">what we do</a></span></li>
-                        <li><a href="results">our results</a></li>
-                        <li><a href="contact">contact us</a></li>
+                        <li><a href="#results">our results</a></li>
+                        <li><a href="#contact">contact us</a></li>
                     </ul>
                     
                 </nav>
@@ -31,7 +34,7 @@
             <section class="hero-text">
                 <div class="hero-part-1">
                     <div class="hero-part-1-text">
-                        <h1><span>Lorem</span> ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                        <h1><span>Lorem</span> ipsum dolor sit amet consectetur adipisicing.</h1>
                         <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor..</p>
                     </div>
                     <button class="btn">call to action</button>
@@ -42,7 +45,7 @@
             </section>
         </div>
         <main>
-            <section class="wwd">
+            <section class="wwd" id="whatwedo">
                 <div class="wwd-container">
                     <h2>what we do...</h2>
                     <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, fugiat ab! Quo illum delectus earum dolorum. Mollitia deleniti aspernatur, accusamus quia natus corrupti in sapiente nobis alias, corporis necessitatibus eveniet.</p>
@@ -70,7 +73,7 @@
                     </div>
                 </div>
             </section>
-        <section class="results">
+        <section class="results" id="results">
             <div class="results-container">
                 <h2>our results speak for themselves</h2>
                 <p id="results">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero ullam tempora aliquid magnam, dolorem officia necessitatibus perferendis ipsa cumque quis nam distinctio provident porro eius unde odit id consequatur veritatis. Tenetur et, dolorum nulla ea quis mollitia soluta distinctio, culpa officia accusantium assumenda omnis!</p>
@@ -94,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-container">
                 <h2>contact us</h2>
                 <form action="">
@@ -112,7 +115,10 @@
     </main>
     <footer>
         <div class="footer-icons">
-            <img src="./images/logo_headphones.png" alt="">
+            <div class="logo-wrapper">
+            <img src="./images/favicon.png" alt="">
+            <span class="logo-fot"><span class="glow">h</span>eadphones</span>
+        </div>
             <div class="icons">
                 <span class="holberton_school-icon-ic_facebook"></span>
                 <span class="holberton_school-icon-ic_twitter"></span>
